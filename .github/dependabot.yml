@@ -5,7 +5,8 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "composer" # Use "composer" for PHP projects
+    directory: "/" # Location of the composer.json and composer.lock files
     schedule:
-      interval: "daily"
+      interval: "daily" # Set to "daily" to check for updates every day
+
